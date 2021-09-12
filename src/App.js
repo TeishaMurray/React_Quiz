@@ -5,22 +5,26 @@ import QuizCard from './components/QuizCard';
 import ScoreCard from './components/ScoreCard';
 
 function App() {
-  const [quiz] = useState (quizData)
-  
-  console.log("App.js line 10", quiz[0].question)
+  const [quizArray, setQuizArray] = useState(quizData)
+  // const [currentQuestion, setCurrentQuestion] = useState ()
 
-  // const quizQuestions = quiz.map ( (question) => <QuizCard question={question}/> )
-  //this would work to display all questions at once but i only want one question at a time
-  //we do want to map over the answers for the buttons
-  // const answerOptions = quiz.quizData[0].answers.map ( (answers) => <QuizCard answers={answers} />)
-  // console.log("App.js line16", answerOptions)
+  console.log("App.js line 10", quizArray)
+
+
+
+  //add conditional below for array length so that when you run out of questions quiz is complete
+  const nextQuestion = () => {
+    console.log("we are inside quizCard, we clicked and calling our function from App.js where this console log lives")
+    if (quizArray.length > 0) {
+      setQuizArray(quizArray.slice(1))
+    }
+  }
   return (
     <div>
-      <QuizCard  
-      question1={quiz[0].question} 
-      question2={quiz[1].question} 
-      question3={quiz[2].question}
-      answers={quiz[0].answers}
+      <QuizCard
+        quiz={quizArray[0]}
+        nextQuestion={nextQuestion}
+      //^^passign a function as props / lifting state^^
       />
 
       <ScoreCard />

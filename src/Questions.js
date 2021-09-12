@@ -6,7 +6,7 @@ const quizData =     [
         {answr: "forEach()", isCorrect: false},
         {answr: "map()", isCorrect: true},
       ]
-    },
+    }, 
     {
       question: "What method is used to arrange/sort array’s elements either in ascending or descending order?",
       answers: [

@@ -1,25 +1,18 @@
 import React from 'react'
-import AnswerCard from './AnswerCard'
 
 const QuizCard = (props) => {
     // console.log("QuizCard line5", props.question3)
-    // console.log("QuizCard line6", props.answers)
-        console.log("QuizCard", props.question)
-    return(
+    console.log("QuizCard line5", props)
+    // console.log("QuizCard line7", props.quiz[0].question)
+    return (
         <div>
             <div>
-                <h2>Description</h2>
-            </div>
-            <div>
                 <h2>JS Array Methods Quiz</h2>
-                <div className="question-sec">
-                    {props.question1}
-                    <div className="answer-btns">
-                        
-                        <AnswerCard options={props.answers} />
-                    </div>
+                <h3>{props.quiz.question}</h3>
+                <div>
+                    <button onClick={() => props.nextQuestion()}>Next Question</button>
                 </div>
-                </div>
+            </div>
         </div>
     )
 }
