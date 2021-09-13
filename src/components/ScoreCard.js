@@ -1,10 +1,11 @@
-const ScoreCard = () => {
+const ScoreCard = (props) => {
 
+console.log("ScoreCard line3", "Current Score", props.scoreDisplay)
     return(
         <div>
             <div>
                 <h2>Your score</h2>
-                <div>some # or % here</div>
+                <div>{props.scoreDisplay}/10</div>
             </div>
         </div>
         
