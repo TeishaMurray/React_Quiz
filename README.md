@@ -12,5 +12,6 @@ You will need to install react to use this web application (see below).
 
 # Installing
 •	download files in this repo
+
 •	in terminal type ‘npm install’ to download node modules
 
