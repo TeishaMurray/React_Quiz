@@ -7,11 +7,6 @@ Uses multiple components to pass quiz data (questions, answers, and scoring) in 
 I used “How to Build a Quiz App Using React” from freeCodeCamp.com with Chris Blakely as a guide for the logic. I had to develop various alternative approaches, as my app passes state through components and his state is stored locally in the app.js file (see link below for more details).
 https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/
 
-# Dependencies
-You will need to install react to use this web application (see below). 
+You can view this app using the link below:
 
-# Installing
-•	download files in this repo
-
-•	in terminal type ‘npm install’ to download node modules
-
+https://quiz-js-arraymethods.herokuapp.com/
